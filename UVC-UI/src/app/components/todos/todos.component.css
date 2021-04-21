@@ -10,23 +10,7 @@ h1{
 	background-color: #ededed;
 	border-bottom: 1px solid #DDD;
 }
-.deleteTodo{
-	display: block;
-	width: 100%;
-	max-width: 200px;
-	appearance: none;
-	border-radius:1em ;
-	outline: none;
-	background: none;
 
-	background-color: #FE4880;
-	color: #FFF;
-	margin: 15px auto;
-
-	padding: 10px 15px;
-	font-size: 16px;
-	font-weight: 70;
-}
 
 .todo:nth-child(even) {
 	background-color: #EEE;
