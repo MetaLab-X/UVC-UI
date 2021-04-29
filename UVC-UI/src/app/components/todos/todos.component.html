@@ -1,21 +1,8 @@
 <div class="todos">
     <h1>UVC-UI</h1>
-	<form (submit)="addTodo()">
-		<input 
-			type="text"
-			name="inputTodo"
-			placeholder="Enter todo..."
-			class="todo-input"
-			[(ngModel)]="inputTodo"
-		/>
-		<input type="submit" value="Add Todo" class="todo-submit" />
-	</form>
 	<div *ngFor="let todo of todos; let i = index;" class="todo {{ (todo.completed ? 'done' : '') }}">
-		<div class="id">{{ i }}</div>
+		<div class="row-number">{{ i + 1 }}</div>
 		<div class="content" (click)="toggleDone(i)">{{ todo.content }}</div>
-        <mat-slide-toggle [(ngModel)]="isChecked">{{isChecked}}</mat-slide-toggle>
-    
-        <div>{{myModol}}</div>
-		
+        <mat-slide-toggle [(ngModel)]="todo.completed">{{ todo.completed ? 'Paid' : 'Unpaid'}}</mat-slide-toggle>
 	</div>
 </div>

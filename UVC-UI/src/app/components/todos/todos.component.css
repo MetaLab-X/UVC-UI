@@ -4,7 +4,7 @@ h1{
     margin: 10px;
 }
 .todo {
-	width: 300px;
+	width: 50em;
 	display: flex;
 	padding: 30px;
 	background-color: #ededed;
@@ -20,7 +20,7 @@ h1{
 	border-bottom: 0;
 }
 
-.todo .id {
+.todo .row-number {
 	flex: 1 1 50px;
 }
 
